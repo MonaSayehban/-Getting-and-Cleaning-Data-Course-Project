@@ -43,10 +43,10 @@
 colNames <- colnames(setAllInOne)
  #Mean and Standard deviation
  mean_and_std <- (grepl("activityId" , colNames) | 
-                            +  grepl("subjectId" , colNames) | 
-                            +  grepl("mean.." , colNames) | 
-                            +  grepl("std.." , colNames) 
-                        +                   )
+                              grepl("subjectId" , colNames) | 
+                              grepl("mean.." , colNames) | 
+                              grepl("std.." , colNames) 
+                                           )
 setForMeanAndStd <- setAllInOne[ , mean_and_std == TRUE]
 ================================================
  #Step4
